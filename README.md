@@ -2,7 +2,7 @@
 
 API REST em **Spring Boot 3 / Java 17** para gerenciar livros e empréstimos de uma biblioteca, com banco **PostgreSQL**. Trabalho de Programação Backend.
 
-**Autor:** rodofosilva
+**Autor:** Rodofo Dheymison (GitHub: rodofosilva)
 **Vídeo de demonstração:** _cole aqui o link (YouTube não listado ou Drive)_
 
 ## Tecnologias
@@ -79,7 +79,7 @@ Relacionamento **1:N**: um `Livro` possui vários `Emprestimo` (`@OneToMany` / `
 ## Tratamento de erros
 `@RestControllerAdvice` (`GlobalExceptionHandler`) padroniza as respostas:
 ```json
-{ "status": 409, "erro": "Conflict", "mensagem": "Livro sem estoque disponível", "timestamp": "2026-10-28T10:00:00" }
+{ "status": 409, "erro": "Conflict", "mensagem": "Livro sem estoque disponível", "timestamp": "2026-11-03T10:00:00" }
 ```
 400 (validação / formato inválido), 404 (não encontrado), 409 (regra de negócio), 500 (erro inesperado).
 
@@ -94,4 +94,6 @@ src/main/java/br/com/biblioteca
 └── exception    # exceções e handler global
 src/main/resources/static/index.html   # telas
 ```
-##Autor: Rodofo Dheymison
+
+## Autor
+**Rodofo Dheymison**
